@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ColorPicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane fx:id="mainPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.csc311_gui_basics.HelloController">
+   <children>
+      <Button layoutX="94.0" layoutY="281.0" mnemonicParsing="false" text="Click Me Please!" />
+      <ImageView fitHeight="400.0" fitWidth="286.0" layoutX="333.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Images/Image_Example.jpg" />
+         </image>
+      </ImageView>
+      <Label alignment="TOP_LEFT" layoutX="12.0" layoutY="62.0" rotate="25.0" style="-fx-text-fill: teal; -fx-background-color: black;" text="Christian Pivaral">
+         <font>
+            <Font size="35.0" />
+         </font>
+      </Label>
+      <ColorPicker fx:id="colorPicker" editable="true" layoutX="14.0" layoutY="359.0" onAction="#changeBackgroundColor" promptText="Choose A Color" />
+   </children>
+</AnchorPane>
